@@ -22,6 +22,10 @@
 ::Usage: change "sourcedir" and "destdir" to match your wanted source and destination directories
 ::use the option -s when launching the command to shutdown the computer after the backup
 
+::TODO:
+::accept sourcedir, destdir and logfile as arguments
+::sanitize all before use
+
 @echo off
 
 for /f "tokens=2 delims==" %%a in ('wmic OS Get localdatetime /value') do set "dt=%%a"
